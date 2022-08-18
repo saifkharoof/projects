@@ -1,0 +1,40 @@
+body {
+background-color: var(--bc1-step1);
+
+}
+
+#info {
+    color: var(--FC-step3);
+    margin: 2% 3%;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: clamp(1.125rem, 1.0972rem + 0.2222vw, 1.375rem);
+}
+
+#link2email , #text4phone{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #f2f2f2;
+    word-wrap: break-word;
+}
+
+
+#email, #phone {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media (max-width:300px) {
+    p {
+        text-align: initial;
+    }
+}
+

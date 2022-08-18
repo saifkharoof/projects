@@ -1,0 +1,127 @@
+body{
+  background-color: var(--bc1-step1);
+}
+
+input[type=text], select, textarea,input[type=password],input[type=email],input[type=tel] {
+
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  h2, .text {
+      margin-bottom: 20px;
+  }
+h2{
+  color: var(--FC-step2);
+}
+  .container form {
+    margin: auto;
+    width: 99%;
+  }
+
+  label,  #extratext {
+    display:block;
+    margin-right: 20px;
+    font-size: 1.25rem;
+    color: var(--FC-step2);
+  }
+  
+  input[type=submit] {
+    background-color: var(--bc2);
+    color: var(--FC);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 95%;
+    margin-top: 10px;
+  
+  }
+  
+  input[type=submit]:hover {
+    background-color: var(--bcHover2);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var(--bc1-step1);
+    padding: 20px;
+    margin-top: 2%;
+    box-shadow: 3px 5px 20px 2px #0e1a24;
+  }
+
+  #extrainfo,#lessinfo {
+    color: var(--FC-step2);
+    margin-bottom:1.5rem;
+    padding-left: 3%;
+    display: block;
+  }
+
+  #extrainfo ~ #addinfo{
+    margin-top: 1.5rem;
+    display: none;
+  }
+  
+  #extrainfo ~ #addinfo:target{
+    display: block;
+
+  }
+
+
+
+  /* aside  > #extrainfo:target > #addinfo  {
+    display: none;
+   
+  } 
+/* 
+  aside > #extrainfo > #addinfo    {
+    display: block;
+    background-color: #0e1a24;
+  } */
+
+
+    @media (min-width: 600px) {
+      label {
+          display: inline-block;
+          width: 20%;
+          
+      }
+  
+      input[type=text], select, textarea,input[type=password],input[type=email],input[type=tel] {
+          width: 70%;
+         
+      }
+  
+
+      input {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+
+      .container {
+          align-items: center;
+          margin: auto;
+          width: 50%;
+          margin-top: 5% ;
+          margin-bottom: 5% ;
+      }
+
+      .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+    }
+   
+   
